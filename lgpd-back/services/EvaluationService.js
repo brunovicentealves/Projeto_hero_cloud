@@ -9,8 +9,8 @@ const getEvaluationById = (id) => {
   return evaluationRepository.getEvaluationById(id);
 }
 
-const getAllEvaluation = () => {
-  return evaluationRepository.getAllEvaluation();
+const getAllEvaluations = () => {
+  return evaluationRepository.getAllEvaluations();
 }
 
 const updateEvaluation = (id, evaluationModel) => {
@@ -26,7 +26,7 @@ const deleteEvaluation = (id) => {
 const services = {
   saveEvaluation,
   getEvaluationById,
-  getAllEvaluation,
+  getAllEvaluations,
   updateEvaluation,
   deleteEvaluation
 };

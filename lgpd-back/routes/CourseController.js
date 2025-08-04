@@ -8,7 +8,7 @@ router.post("/addCourse", function (req, res) {
     const courseModel = {
         name: req.body.name,
     }
-    const course = courseService.saveEvaluationService(courseModel);
+    const course = courseService.saveCourse(courseModel);
     return res.status(201).json(course);
 });
 

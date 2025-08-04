@@ -138,6 +138,7 @@ export class UserFormComponent {
         });
       } else {
         delete this.model?.id;
+        console.log("Teste:"+formData);
         await this.userService.post<any>({
           url: `http://localhost:3000/addUser`,
           params: {

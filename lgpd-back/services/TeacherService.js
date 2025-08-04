@@ -8,8 +8,8 @@ const getTeacherById = (id) => {
   return teacherRepository.getTeacherById(id);
 }
 
-const getAllTeacher = () => {
-  return teacherRepository.getAllTeacher();
+const getAllTeachers = () => {
+  return teacherRepository.getAllTeachers();
 }
 
 const updateTeacher = (id, teacherModel) => {
@@ -25,7 +25,7 @@ const deleteTeacher = (id) => {
 const services = {
   saveTeacher,
   getTeacherById,
-  getAllTeacher,
+  getAllTeachers,
   updateTeacher,
   deleteTeacher
 };

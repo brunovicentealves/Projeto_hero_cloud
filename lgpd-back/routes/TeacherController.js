@@ -2,9 +2,6 @@ import express from 'express';
 let router = express.Router();
 import teacherService from '../services/TeacherService.js';
 
-
-
-
 router.post("/addTeacher", function (req, res) {
     const courseModel = {
         name: req.body.name,

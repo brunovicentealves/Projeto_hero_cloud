@@ -8,8 +8,8 @@ const getCourseById = (id) => {
   return courseRepository.getCourseById(id);
 }
 
-const getAllCourse = () => {
-  return courseRepository.getAllCourse();
+const getAllCourses = () => {
+  return courseRepository.getAllCourses();
 }
 
 const updateCourse = (id, courseModel) => {
@@ -25,7 +25,7 @@ const deleteCourse = (id) => {
 const services = {
   saveCourse,
   getCourseById,
-  getAllCourse,
+  getAllCourses,
   updateCourse,
   deleteCourse
 };

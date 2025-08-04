@@ -3,11 +3,13 @@ let router = express.Router();
 import evaluationService from '../services/EvaluationService.js';
 
 router.post("/addEvaluation", function (req, res) {
-    const courseModel = {
-        name: req.body.name,
+    const evaluationModel = {
+        user_id: req.body.user_id,
+        course_id: req.body.course_id,
+        concept: req.body.concept
     }
-    const course = evaluationService.saveEvaluationService(evaluationModel);
-    return res.status(201).json(course);
+    const evaluation = evaluationService.saveEvaluation(evaluationModel);
+    return res.status(201).json(evaluation);
 });
 
 router.get("/getAllEvaluations", async function (req, res) {

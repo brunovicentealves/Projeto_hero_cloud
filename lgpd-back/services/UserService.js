@@ -8,8 +8,8 @@ const getUserById = (id) => {
   return userRepository.getUserById(id);
 }
 
-const getAllUser = () => {
-  return userRepository.getAllUser(id);
+const getAllUsers = () => {
+  return userRepository.getAllUsers();
 }
 
 const updateUser = (id, userModel) => {
@@ -25,7 +25,7 @@ const deleteUser = (id) => {
 const services = {
   saveUser,
   getUserById,
-  getAllUser,
+  getAllUsers,
   updateUser,
   deleteUser
 };
