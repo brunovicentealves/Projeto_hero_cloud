@@ -3,8 +3,6 @@ let router = express.Router();
 import userService from '../services/UserService.js';
 import multer from 'multer';
 import process from 'process';
-import { profile } from 'console';
-
 
 // Configure multer for file uploads
 const storage = multer.diskStorage({
